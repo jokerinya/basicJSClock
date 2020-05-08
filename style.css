@@ -1,0 +1,65 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+div.main {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.bg {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+}
+
+.arm {
+  width: 50%;
+  height: 3px;
+  background-color: black;
+}
+
+#minute-bg {
+  z-index: 10;
+}
+#second-bg {
+  z-index: 20;
+}
+
+#minute {
+  height: 8px;
+  background-color: rgb(146, 143, 146);
+}
+#hour {
+  height: 8px;
+  background-color: rgb(49, 25, 25);
+}
+#inner-ring {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  left: 90px;
+  top: 90px;
+  z-index: 30;
+}
+
+#outer-ring {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  z-index: 5;
+  border: 10px solid rgb(230, 230, 230);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
+  background-color: transparent;
+}
